@@ -1,0 +1,172 @@
+{
+  "name": "question_button_next",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "RxUX1KUeZ6se5rMx7nKcQs",
+    "node": "11:99",
+    "version": "2754609275"
+  },
+  "default": "QuestionButtonNext",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Icon Buttons / Text button + icon right"
+      },
+      {
+        "type": "text",
+        "id": "label"
+      },
+      {
+        "type": "group",
+        "id": "icon"
+      },
+      {
+        "type": "vector",
+        "id": "Vector"
+      }
+    ],
+    "modes": {
+      "QuestionButtonNext": {
+        "rules": [
+          {
+            "id": "top_level",
+            "tap-handler": "$on QuestionButtonNext tapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Icon Buttons / Text button + icon right"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Icon Buttons / Text button + icon right",
+            "padding": {
+              "left": "12.0",
+              "top": "6.0",
+              "right": "12.0",
+              "bottom": "6.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "120.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "36.0"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "label",
+              "icon"
+            ],
+            "item-spacing": "12.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "label",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "60.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "16.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "223.27433628318585",
+              "saturation": "0.9186991869918698",
+              "value": "0.9647058823529412"
+            },
+            "text-content": "NEXT",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "letter-spacing": "1.0",
+            "line-height": "1.1428571319580079",
+            "case": "upper"
+          },
+          {
+            "id": "icon",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Vector"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Vector",
+            "margin": {
+              "left": "8.5999755859375",
+              "top": "6.0",
+              "right": "8.0",
+              "bottom": "6.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "vector.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "on QuestionButtonNext tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "QuestionButtonNext",
+      "size": {
+        "width": 120.0,
+        "height": 36.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

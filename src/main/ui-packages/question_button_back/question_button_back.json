@@ -1,0 +1,161 @@
+{
+  "name": "question_button_back",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "RxUX1KUeZ6se5rMx7nKcQs",
+    "node": "11:100",
+    "version": "2754609275"
+  },
+  "default": "QuestionButtonBack",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Icon Buttons / Text button + icon left"
+      },
+      {
+        "type": "group",
+        "id": "chevron left"
+      },
+      {
+        "type": "text",
+        "id": "label"
+      },
+      {
+        "type": "vector",
+        "id": "Vector"
+      }
+    ],
+    "modes": {
+      "QuestionButtonBack": {
+        "rules": [
+          {
+            "id": "top_level",
+            "tap-handler": "$on QuestionButtonBack tapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Icon Buttons / Text button + icon left"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Icon Buttons / Text button + icon left",
+            "padding": {
+              "left": "12.0",
+              "top": "6.0",
+              "right": "12.0",
+              "bottom": "6.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "110.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "36.0"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "chevron left",
+              "label"
+            ],
+            "item-spacing": "12.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "chevron left",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Vector"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "label",
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "223.27433628318585",
+              "saturation": "0.9186991869918698",
+              "value": "0.9647058823529412"
+            },
+            "text-content": "BACK",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "letter-spacing": "1.0",
+            "line-height": "1.1428571319580079",
+            "case": "upper"
+          },
+          {
+            "id": "Vector",
+            "margin": {
+              "left": "8.0",
+              "top": "6.0",
+              "right": "8.599998474121094",
+              "bottom": "6.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "vector.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "on QuestionButtonBack tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "QuestionButtonBack",
+      "size": {
+        "width": 110.0,
+        "height": 36.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

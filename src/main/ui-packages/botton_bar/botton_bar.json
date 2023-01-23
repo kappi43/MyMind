@@ -1,0 +1,473 @@
+{
+  "name": "botton_bar",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "RxUX1KUeZ6se5rMx7nKcQs",
+    "node": "9:149",
+    "version": "2754609275"
+  },
+  "default": "BottonBar",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "content"
+      },
+      {
+        "type": "group",
+        "id": "stats"
+      },
+      {
+        "type": "group",
+        "id": "settings"
+      },
+      {
+        "type": "group",
+        "id": "home"
+      },
+      {
+        "type": "group",
+        "id": "data usage"
+      },
+      {
+        "type": "text",
+        "id": "Tab 2 Label (active)"
+      },
+      {
+        "type": "vector",
+        "id": "Vector"
+      },
+      {
+        "type": "group",
+        "id": "settingsIcon"
+      },
+      {
+        "type": "text",
+        "id": "Tab 3 Label"
+      },
+      {
+        "type": "vector",
+        "id": "settingsVec"
+      },
+      {
+        "type": "text",
+        "id": "Tab 1 Label"
+      },
+      {
+        "type": "group",
+        "id": "homeIcon"
+      },
+      {
+        "type": "vector",
+        "id": "v"
+      }
+    ],
+    "modes": {
+      "BottonBar": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "content"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "content",
+            "is-structured": "false",
+            "children": [
+              "stats",
+              "settings",
+              "home"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.07058823529411765"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "stats",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "132.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "6.0"
+              }
+            },
+            "tap-handler": "$on stats tapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "96.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "data usage",
+              "Tab 2 Label (active)"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "settings",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "252.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "8.0"
+              }
+            },
+            "tap-handler": "$on settings tapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "96.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "38.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "settingsIcon",
+              "Tab 3 Label"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "home",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "12.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "8.0"
+              }
+            },
+            "tap-handler": "$on home tapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "96.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "38.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Tab 1 Label",
+              "homeIcon"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "data usage",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-8.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Vector"
+            ]
+          },
+          {
+            "id": "Tab 2 Label (active)",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "12.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "96.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "0.6",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Stats",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "bottom",
+            "text-size": "12.0",
+            "letter-spacing": "0.4000000059604645",
+            "line-height": "1.3333332824707032"
+          },
+          {
+            "id": "Vector",
+            "margin": {
+              "left": "2.0",
+              "top": "2.04998779296875",
+              "right": "2.0",
+              "bottom": "2.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "vector.svg"
+          },
+          {
+            "id": "settingsIcon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "1.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-7.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "settingsVec"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Tab 3 Label",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "11.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "96.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "0.6",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Settings",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "bottom",
+            "text-size": "12.0",
+            "letter-spacing": "0.4000000059604645",
+            "line-height": "1.3333332824707032"
+          },
+          {
+            "id": "settingsVec",
+            "margin": {
+              "left": "4.222412109375",
+              "top": "4.0",
+              "right": "4.222412109375",
+              "bottom": "4.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "settings_vec.svg"
+          },
+          {
+            "id": "Tab 1 Label",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "11.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "96.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "0.6",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Home",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "bottom",
+            "text-size": "12.0",
+            "letter-spacing": "0.4000000059604645",
+            "line-height": "1.3333332824707032"
+          },
+          {
+            "id": "homeIcon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-1.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-7.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "v"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "v",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "17.0"
+              }
+            },
+            "vector-content": "v.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "on stats tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "on settings tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "on home tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "BottonBar",
+      "size": {
+        "width": 360.0,
+        "height": 56.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

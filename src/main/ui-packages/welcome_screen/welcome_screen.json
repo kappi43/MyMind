@@ -1,0 +1,162 @@
+{
+  "name": "welcome_screen",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "RxUX1KUeZ6se5rMx7nKcQs",
+    "node": "20:99",
+    "version": "2754609275"
+  },
+  "default": "WelcomeScreen",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Brand Logo"
+      },
+      {
+        "type": "text",
+        "id": "Title"
+      },
+      {
+        "type": "group",
+        "id": "MUI Icon"
+      },
+      {
+        "type": "vector",
+        "id": "mind"
+      }
+    ],
+    "modes": {
+      "WelcomeScreen": {
+        "rules": [
+          {
+            "id": "top_level",
+            "tap-handler": "$on Launch Screen 2 tapped",
+            "is-structured": "false",
+            "children": [
+              "Brand Logo",
+              "Title"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "Brand Logo",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "144.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "144.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "MUI Icon"
+            ]
+          },
+          {
+            "id": "Title",
+            "margin": {
+              "left": "136.0",
+              "top": "556.0",
+              "right": "138.0",
+              "bottom": "56.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "color": {
+              "alpha": "0.8666666666666667",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "MyMind",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "24.0",
+            "line-height": "1.1666666412353515"
+          },
+          {
+            "id": "MUI Icon",
+            "margin": {
+              "left": "29.0",
+              "top": "28.0",
+              "right": "27.0",
+              "bottom": "28.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "mind"
+            ],
+            "clip-content": "false"
+          },
+           {
+             "id": "mind",
+             "size-constraints": {
+               "width-constraints": {
+                 "sizing-mode": "proportional",
+                 "value": "1.0"
+               },
+               "height-constraints": {
+                 "sizing-mode": "proportional",
+                 "value": "1.0"
+               }
+             },
+             "vector-content": "mind.svg"
+           }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "on Launch Screen 2 tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "WelcomeScreen",
+      "size": {
+        "width": 360.0,
+        "height": 640.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

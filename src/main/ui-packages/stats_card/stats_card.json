@@ -1,0 +1,252 @@
+{
+  "name": "stats_card",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "RxUX1KUeZ6se5rMx7nKcQs",
+    "node": "7:184",
+    "version": "2754609275"
+  },
+  "default": "statsCard",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "message"
+      },
+      {
+        "type": "text",
+        "id": "value"
+      },
+      {
+        "type": "group",
+        "id": "Badge"
+      },
+      {
+        "type": "text",
+        "id": "percentage"
+      },
+      {
+        "type": "group",
+        "id": "image"
+      }
+    ],
+    "modes": {
+      "statsCard": {
+        "rules": [
+          {
+            "id": "top_level",
+            "border-radius": "16.0",
+            "tap-handler": "$on statsCard tapped",
+            "is-structured": "false",
+            "children": [
+              "message",
+              "value",
+              "Badge"
+            ],
+            "background-color": "$statsCard background color"
+          },
+          {
+            "id": "message",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "24.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "24.0"
+              }
+            },
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.10980392156862745"
+            },
+            "text-content": "$messageText",
+            "overflow": "visible",
+            "text-align": "left",
+            "line-height": "1.4285714721679688",
+            "typeface": "Inter"
+          },
+          {
+            "id": "value",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "24.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "52.0"
+              }
+            },
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.10980392156862745"
+            },
+            "text-content": "$valueText",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "24.0",
+            "line-height": "1.5",
+            "typeface": "Inter"
+          },
+          {
+            "id": "Badge",
+            "padding": {
+              "left": "4.0",
+              "right": "2.0"
+            },
+            "border-radius": "4.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "end",
+                "offset": "-24.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "60.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "percentage",
+              "image"
+            ],
+            "item-spacing": "4.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "percentage",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.10980392156862745"
+            },
+            "text-content": "$percentageText",
+            "overflow": "visible",
+            "text-align": "right",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.5",
+            "typeface": "Inter"
+          },
+          {
+            "id": "image",
+            "presence": "false",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "16.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "16.0"
+              }
+            },
+            "is-structured": "false",
+            "children": "$image children",
+            "clip-content": "false"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "statsCard background color": {
+      "data-type": "color",
+      "required": false,
+      "description": ""
+    },
+    "on statsCard tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "messageText": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "valueText": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "percentageText": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "image children": {
+      "data-type": "list-item",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "statsCard",
+      "size": {
+        "width": 325.0,
+        "height": 112.0
+      },
+      "parameters": {
+        "statsCard background color": {
+          "alpha": "1.0",
+          "hue": "201.42857142857142",
+          "saturation": "0.1098039215686275",
+          "value": "1.0"
+        },
+        "messageText": "Assignments missed",
+        "valueText": "753",
+        "percentageText": "+11.01%",
+        "image children": [
+          {
+            "type": "vector",
+            "margin": {
+              "left": "1.5",
+              "top": "4.0",
+              "right": "2.0",
+              "bottom": "3.9999990463256836"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

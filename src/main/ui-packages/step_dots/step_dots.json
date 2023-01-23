@@ -1,0 +1,139 @@
+{
+  "name": "step_dots",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "RxUX1KUeZ6se5rMx7nKcQs",
+    "node": "9:150",
+    "version": "2754609275"
+  },
+  "default": "step dots",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "step dot3"
+      },
+      {
+        "type": "vector",
+        "id": "step dot2"
+      },
+      {
+        "type": "vector",
+        "id": "step dot _active"
+      },
+      {
+        "type": "vector",
+        "id": "step dot1"
+      }
+    ],
+    "modes": {
+      "step dots": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "step dot3",
+              "step dot2",
+              "step dot _active",
+              "step dot1"
+            ],
+            "item-spacing": "10.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "step dot3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "9.857147216796875"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "8.0"
+              }
+            },
+            "vector-content": "step_dot3.svg"
+          },
+          {
+            "id": "step dot2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "9.857147216796875"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "8.0"
+              }
+            },
+            "vector-content": "step_dot2.svg"
+          },
+          {
+            "id": "step dot _active",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "9.857147216796875"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "8.0"
+              }
+            },
+            "vector-content": "step_dot_active.svg"
+          },
+          {
+            "id": "step dot1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "9.857147216796875"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "8.0"
+              }
+            },
+            "vector-content": "step_dot1.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "stepNumber": {
+      "data-type": "double",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "step dots",
+      "size": {
+        "width": 69.4285888671875,
+        "height": 8.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

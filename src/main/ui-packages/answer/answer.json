@@ -1,0 +1,211 @@
+{
+  "name": "answer",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "RxUX1KUeZ6se5rMx7nKcQs",
+    "node": "9:148",
+    "version": "2754609275"
+  },
+  "default": "Answer",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "row1"
+      },
+      {
+        "type": "text",
+        "id": "answer"
+      },
+      {
+        "type": "group",
+        "id": "Radio Button"
+      },
+      {
+        "type": "vector",
+        "id": "hover state"
+      },
+      {
+        "type": "vector",
+        "id": "OFF"
+      },
+      {
+        "type": "vector",
+        "id": "ON"
+      }
+    ],
+    "modes": {
+      "Answer": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "row1"
+            ],
+            "item-spacing": "10.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "row1",
+            "padding": {
+              "left": "15.0",
+              "top": "4.0",
+              "right": "15.0",
+              "bottom": "4.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "360.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "answer",
+              "Radio Button"
+            ],
+            "item-spacing": "257.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "answer",
+            "color": {
+              "alpha": "0.8666666666666667",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$answer",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "16.0",
+            "letter-spacing": "0.15000000596046448",
+            "line-height": "1.5"
+          },
+          {
+            "id": "Radio Button",
+            "tap-handler": "$on Radio Button tapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "hover state",
+              "OFF",
+              "ON"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "hover state",
+            "presence": "false",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              }
+            }
+          },
+          {
+            "id": "OFF",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              }
+            },
+            "vector-content": "off.svg"
+          },
+          {
+            "id": "ON",
+            "presence": "false",
+            "margin": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "answer": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "on Radio Button tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Answer",
+      "size": {
+        "width": 360.0,
+        "height": 48.0
+      },
+      "parameters": {
+        "answer": "Good"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
